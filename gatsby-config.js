@@ -8,26 +8,22 @@ module.exports = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
-    // See all options: https://github.com/bgoonz/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    // See all options: https://github.com/bgoonz/gatsby-themes/blob/master/themes/gatsby-theme-bgoonz/gatsby-config.js
+    siteTitleAlt: `bgoonz - Gatsby Starter Portfolio`,
   },
   plugins: [
     {
-      resolve: `@bgoonz/gatsby-theme-cara`,
+      resolve: `@bgoonz/gatsby-theme-bgoonz`,
       // See the theme's README for all available options
       options: {},
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
+    
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @bgoonz/gatsby-theme-cara`,
-        short_name: `Cara`,
+        name: `bgoonz - @bgoonz/gatsby-theme-bgoonz`,
+        short_name: `bgoonz`,
         description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
         start_url: `/`,
         background_color: `#141821`,

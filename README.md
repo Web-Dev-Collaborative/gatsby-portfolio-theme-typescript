@@ -1,74 +1,137 @@
 <p align="center">
-  <a href="https://cara.bgoonz.de">
-    <img alt="bgoonz" src="https://img.bgoonz.de/gatsby/gatsby-site-illustration.png" />
+  <a href="https://themes.lekoarts.de">
+    <img alt="Gatsby Theme" src="https://img.lekoarts.de/gatsby/gatsby-themes-illustration.png" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby Starter Portfolio: Cara
+  @bgoonz/gatsby-theme-bgoonz
 </h1>
 
 <p align="center">
-  <a href="https://github.com/bgoonz/gatsby-starter-portfolio-cara/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-0BSD-blue.svg" alt="Gatsby Starter Portfolio: Cara is released under the 0BSD license." />
+  <a href="https://github.com/LekoArts/gatsby-themes/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="@bgoonz/gatsby-theme-bgoonz is released under the MIT license." />
+  </a>
+  <a href="https://www.npmjs.org/package/@bgoonz/gatsby-theme-bgoonz">
+    <img src="https://img.shields.io/npm/v/@bgoonz/gatsby-theme-bgoonz.svg" alt="Current npm package version." />
+  </a>
+  <a href="https://npmcharts.com/compare/@bgoonz/gatsby-theme-bgoonz?minimal=true">
+    <img src="https://img.shields.io/npm/dm/@bgoonz/gatsby-theme-bgoonz.svg" alt="Downloads per month on npm." />
+  </a>
+  <a href="https://npmcharts.com/compare/@bgoonz/gatsby-theme-bgoonz?minimal=true">
+    <img src="https://img.shields.io/npm/dt/@bgoonz/gatsby-theme-bgoonz.svg" alt="Total downloads on npm." />
   </a>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
-  <a href="https://twitter.com/intent/follow?screen_name=bgoonz_de">
-    <img src="https://img.shields.io/twitter/follow/bgoonz_de.svg?label=Follow%20@bgoonz_de" alt="Follow @bgoonz_de" />
-  </a>
+  <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
+      <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@bgoonz_de" alt="Follow @bgoonz_de" />
+    </a>
 </p>
 
-Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Using the Gatsby Theme [`@bgoonz/gatsby-theme-cara`](https://github.com/bgoonz/gatsby-themes/tree/master/themes/gatsby-theme-cara).
+Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Especially designers and/or photographers will love this theme! Built with [MDX](https://mdxjs.com/) and [Theme UI](https://theme-ui.com/).
 
-[**Demo Website**](https://cara.bgoonz.de)
+[![Live Preview](https://img.lekoarts.de/gatsby/preview.svg)](https://bgoonz.lekoarts.de)
 
-Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.bgoonz.de)
+Read the [Source Code](https://github.com/LekoArts/gatsby-starter-portfolio-bgoonz).
 
-## ✨ Features
+Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)
+
+## Features
 
 - Theme UI-based theming
 - react-spring parallax effect
 - CSS Animations on Shapes
+- Light/Dark mode
 
-## 🚀 Getting Started
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/bgoonz/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/bgoonz/gatsby-starter-portfolio-cara/tree/master/)
-
-1. **Create a Gatsby site.**
-
-Use the Gatsby CLI to create a new site, specifying this project
+## Installation
 
 ```sh
-gatsby new project-name https://github.com/bgoonz/gatsby-starter-portfolio-cara
+npm install @bgoonz/gatsby-theme-bgoonz
 ```
 
-2. **Start developing.**
+### Install as a starter
 
-Navigate into your new site's directory and start it up.
+This will generate a new site (with the folder name "bgoonz") that pre-configures use of the theme including example content and additional plugins.
 
 ```sh
-cd project-name
-gatsby develop
+gatsby new bgoonz LekoArts/gatsby-starter-portfolio-bgoonz
 ```
 
-3. **Open the code and start customizing!**
+[**View the starter's code**](https://github.com/LekoArts/gatsby-starter-portfolio-bgoonz)
 
-Your site is now running at `http://localhost:8000`!
+## Usage
 
-If you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can checkout this [shorter](https://www.gatsbyjs.org/docs/themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.org/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.
+### Theme options
 
-## 📝 Using and modifying this starter
+| Key        | Default Value | Description                                                                                             |
+| ---------- | ------------- | ------------------------------------------------------------------------------------------------------- |
+| `basePath` | `/`           | Root url for the theme                                                                                  |
+| `mdx`      | `true`        | Configure `gatsby-plugin-mdx` (if your website already is using the plugin pass false to turn this off) |
 
-**Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.org/docs/themes/shadowing/) to understand how to customize the underlying theme!
+#### Example usage
 
-This starter creates a new Gatsby site that installs and configures the theme [`@bgoonz/gatsby-theme-cara`](https://github.com/bgoonz/gatsby-themes/tree/master/themes/gatsby-theme-cara).
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: `@bgoonz/gatsby-theme-bgoonz`,
+      options: {
+        // basePath defaults to `/`
+        basePath: `/sideproject`,
+      },
+    },
+  ],
+};
+```
 
-Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@bgoonz/gatsby-theme-cara/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
+#### Additional configuration
 
-### Changing content
+In addition to the theme options, there are a handful of items you can customize via the `siteMetadata` object in your site's `gatsby-config.js`
 
-The content of this project is defined in four `.mdx` files inside the theme's `sections` folder. You can override the files `intro.mdx`, `projects.mdx`, `about.mdx` and `contact.mdx`. This starter has overriden the `intro.mdx` file as an example. Place the other files in the same `src/@bgoonz/gatsby-theme-cara/sections/` folder.
+```js
+// gatsby-config.js
+module.exports = {
+  siteMetadata: {
+    // Used for the title template on pages other than the index site
+    siteTitle: `bgoonz`,
+    // Default title of the page
+    siteTitleAlt: `bgoonz - @bgoonz/gatsby-theme-bgoonz`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `bgoonz - Gatsby Theme from @bgoonz`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://bgoonz.lekoarts.de`,
+    // Used for SEO
+    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@bgoonz_de`,
+  },
+};
+```
 
-You have to use the `<ProjectCard />` component inside `projects.mdx` to display the cards. Example:
+### Shadowing
+
+Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.org/docs/themes/shadowing/) to understand how to customize the this theme! Generally speaking you will want to place your files into `src/@bgoonz/gatsby-theme-bgoonz/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
+
+### Editing the content
+
+The content of the page is managed by `.mdx` files inside the theme's `sections` folder. You can edit the files by shadowing them in your site.
+
+These files are available: `intro.mdx`, `projects.mdx`, `about.mdx`, `contact.mdx`
+
+See the [example](https://github.com/LekoArts/gatsby-themes/tree/master/examples/bgoonz/src/@bgoonz/gatsby-theme-bgoonz/sections) that shadows via `src/@bgoonz/gatsby-theme-bgoonz/sections/intro.mdx`:
+
+```md
+# Hi, I'm Jane Doe
+
+I'm creating noice web experiences for the next generation of consumer-facing companies
+```
+
+> The other headings should be `<h2>` headings!
+
+You also have access to the `<ProjectCard />` component/shortcode which is used in the `projects.mdx` section. The component takes the props `title` (string), `link` (string), `bg` (string) and `children` (React.ReactNode). You would use it like that:
 
 ```md
 ## Projects
@@ -78,30 +141,8 @@ This project is my entry to Adobe's #ChallengeYourPerspective contest.
 </ProjectCard>
 ```
 
-### Change your `static` folder
-
-The `static` folder contains the icons, social media images and robots.txt. Don't forget to change these files, too!
-
-## 🤔 Questions or problems?
-
-Please open up an issue on the main repository: [bgoonz/gatsby-themes](https://github.com/bgoonz/gatsby-themes). Thanks!
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.org/).
-
-### Themes
-
-- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).
-
-### General
-
-- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.
-
 ## 🌟 Supporting me
 
-Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/bgoonz_de) and share the project with me.
+Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.
 
-Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/bgoonz) or [GitHub Sponsor](https://github.com/sponsors/bgoonz)!
+Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts) or [GitHub Sponsor](https://github.com/sponsors/LekoArts)!
