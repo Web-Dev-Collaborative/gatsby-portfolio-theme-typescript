@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://cara.lekoarts.de">
-    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
+  <a href="https://cara.bgoonz.de">
+    <img alt="bgoonz" src="https://img.bgoonz.de/gatsby/gatsby-site-illustration.png" />
   </a>
 </p>
 <h1 align="center">
@@ -8,20 +8,20 @@
 </h1>
 
 <p align="center">
-  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara/blob/master/LICENSE">
+  <a href="https://github.com/bgoonz/gatsby-starter-portfolio-cara/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-0BSD-blue.svg" alt="Gatsby Starter Portfolio: Cara is released under the 0BSD license." />
   </a>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
-  <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
-    <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de" alt="Follow @lekoarts_de" />
+  <a href="https://twitter.com/intent/follow?screen_name=bgoonz_de">
+    <img src="https://img.shields.io/twitter/follow/bgoonz_de.svg?label=Follow%20@bgoonz_de" alt="Follow @bgoonz_de" />
   </a>
 </p>
 
-Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Using the Gatsby Theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara).
+Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Using the Gatsby Theme [`@bgoonz/gatsby-theme-cara`](https://github.com/bgoonz/gatsby-themes/tree/master/themes/gatsby-theme-cara).
 
-[**Demo Website**](https://cara.lekoarts.de)
+[**Demo Website**](https://cara.bgoonz.de)
 
-Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)
+Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.bgoonz.de)
 
 ## ✨ Features
 
@@ -31,14 +31,14 @@ Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes
 
 ## 🚀 Getting Started
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LekoArts/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LekoArts/gatsby-starter-portfolio-cara/tree/master/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/bgoonz/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/bgoonz/gatsby-starter-portfolio-cara/tree/master/)
 
 1. **Create a Gatsby site.**
 
 Use the Gatsby CLI to create a new site, specifying this project
 
 ```sh
-gatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-cara
+gatsby new project-name https://github.com/bgoonz/gatsby-starter-portfolio-cara
 ```
 
 2. **Start developing.**
@@ -60,13 +60,13 @@ If you want to learn more about how you can use a Gatsby starter that is configu
 
 **Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.org/docs/themes/shadowing/) to understand how to customize the underlying theme!
 
-This starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara).
+This starter creates a new Gatsby site that installs and configures the theme [`@bgoonz/gatsby-theme-cara`](https://github.com/bgoonz/gatsby-themes/tree/master/themes/gatsby-theme-cara).
 
-Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-cara/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
+Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@bgoonz/gatsby-theme-cara/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
 
 ### Changing content
 
-The content of this project is defined in four `.mdx` files inside the theme's `sections` folder. You can override the files `intro.mdx`, `projects.mdx`, `about.mdx` and `contact.mdx`. This starter has overriden the `intro.mdx` file as an example. Place the other files in the same `src/@lekoarts/gatsby-theme-cara/sections/` folder.
+The content of this project is defined in four `.mdx` files inside the theme's `sections` folder. You can override the files `intro.mdx`, `projects.mdx`, `about.mdx` and `contact.mdx`. This starter has overriden the `intro.mdx` file as an example. Place the other files in the same `src/@bgoonz/gatsby-theme-cara/sections/` folder.
 
 You have to use the `<ProjectCard />` component inside `projects.mdx` to display the cards. Example:
 
@@ -84,7 +84,7 @@ The `static` folder contains the icons, social media images and robots.txt. Don'
 
 ## 🤔 Questions or problems?
 
-Please open up an issue on the main repository: [LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes). Thanks!
+Please open up an issue on the main repository: [bgoonz/gatsby-themes](https://github.com/bgoonz/gatsby-themes). Thanks!
 
 ## 🎓 Learning Gatsby
 
@@ -102,6 +102,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on Gatsby's webs
 
 ## 🌟 Supporting me
 
-Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.
+Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/bgoonz_de) and share the project with me.
 
-Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts) or [GitHub Sponsor](https://github.com/sponsors/LekoArts)!
+Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/bgoonz) or [GitHub Sponsor](https://github.com/sponsors/bgoonz)!
