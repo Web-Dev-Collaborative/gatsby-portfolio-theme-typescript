@@ -40,12 +40,12 @@
     "lekoarts"
   ],
   "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-themes/issues"
+    "url": "https://github.com/bgoonz/gatsby-portfolio-theme-typescript/issues"
   },
-  "homepage": "https://themes.lekoarts.de",
+  "homepage": "https://bg-portfolio.netlify.app/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LekoArts/gatsby-themes.git",
+    "url": "https://github.com/LekoArts/gatsby-portfolio-theme-typescript.git",
     "directory": "themes/gatsby-theme-bgoonz"
   }
 }
